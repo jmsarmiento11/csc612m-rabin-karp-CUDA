@@ -52,18 +52,18 @@ The percentage differences indicate that both the CUDA and CUDA V2.0 implementat
 In terms of execution time and performance, the utilization of the NVIDIA Thrust library-based CUDA approach does not demonstrate any enhancement compared to the existing CUDA-based implementation for the Rabin-Karp algorithm.
 
 ## B. Screenshot of the program output (C++)
-### For Pattern length m = 10, Pattern count n = 16
+### For Pattern length m = 20, Pattern count n = 16
 ![Colab C++ Screenshot](https://github.com/jmsarmiento11/csc612m-rabin-karp-CUDA/blob/9a320f26bb5392efb5dc6030faf35f995c524359/RK%20C1.png)
 ![Colab C++ Screenshot](https://github.com/jmsarmiento11/csc612m-rabin-karp-CUDA/blob/9a320f26bb5392efb5dc6030faf35f995c524359/RK%20C1b.png)
 
 
 ## C. Screenshot of the program output (CUDA)
-### For Pattern length m = 10, Pattern count n = 16
+### For Pattern length m = 20, Pattern count n = 16
 ![Colab CUDA Screenshot](https://github.com/jmsarmiento11/csc612m-rabin-karp-CUDA/blob/9a320f26bb5392efb5dc6030faf35f995c524359/RK%20CUDA1a.png)
 ![Colab CUDA Screenshot](https://github.com/jmsarmiento11/csc612m-rabin-karp-CUDA/blob/9a320f26bb5392efb5dc6030faf35f995c524359/RK%20CUDA1b.png)
 
 
 ## D. Screenshot of the program output (CUDA V2.0)
-### For Pattern length m = 10, Pattern count n = 16
+### For Pattern length m = 20, Pattern count n = 16
 ![Colab CUDA V2.0 Screenshot](https://github.com/jmsarmiento11/csc612m-rabin-karp-CUDA/blob/9a320f26bb5392efb5dc6030faf35f995c524359/RK%20CUDA2%201a.png)
 ![Colab CUDA V2.0 Screenshot](https://github.com/jmsarmiento11/csc612m-rabin-karp-CUDA/blob/9a320f26bb5392efb5dc6030faf35f995c524359/RK%20CUDA2%201b.png)
