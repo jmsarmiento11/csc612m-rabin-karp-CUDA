@@ -1,5 +1,21 @@
 # csc612m-rabin-karp-CUDA
 
+The Rabin-Karp algorithm is a string-searching technique to efficiently locate a pattern within a larger text or string. It was developed by Michael O. Rabin and Richard M. Karp in 1987. Unlike some string-searching algorithms that examine characters individually, the Rabin-Karp algorithm leverages hashing to speed up the search process.
+
+The algorithm's significance lies in its ability to perform pattern matching in linear time on average, making it suitable for a variety of applications such as plagiarism detection, and DNA sequence analysis. It excels when dealing with situations where the text and pattern are lengthy, as its performance isn't influenced as heavily by the pattern's length. Additionally, the Rabin-Karp algorithm is amenable to parallelization, allowing for efficient utilization of modern multi-core processors and parallel computing environments.
+## NVIDIA Thrust Library
+The Thrust library is a C++ template library for CUDA that provides a high-level interface for GPU programming. It is based on the Standard Template Library (STL), and it provides a rich collection of data parallel primitives such as scan, sort, and reduce. These primitives can be composed together to implement complex algorithms with concise, readable source code.
+
+This project aims to explore a number of specialized libraries for search algorithms and parallelization. Here's a breakdown of the main Thrust libraries and functions used in the program code:
+1. thrust::device_vector - This function is used to create vectors that reside in the GPU memory.
+2. thrust::host_vector - This is used to create vectors that reside in the CPU memory.
+3. thrust::raw_pointer_cast- This function is used to obtain a raw pointer to the underlying data of a Thrust vector. It's necessary when passing data to CUDA kernels.
+4. cudaDeviceSynchronize - This function is used to ensure that all CUDA kernels have finished executing before proceeding. It synchronizes the host with the device.
+
+In terms of functionality, the code implements the Rabin-Karp string-searching algorithm to search for multiple patterns within a given text. The algorithm compares the hash values of sliding windows of the text with the hash value of the pattern. If hash values match, the algorithm performs a character-by-character comparison to confirm the match. The pattern search is parallelized using CUDA.
+
+These libraries make it easy to implement search algorithms on GPUs using Thrust. They also provide a number of optimizations that can further improve performance.
+
 ## Program Specifications
 ### Inputs
 1. text string t of length n = 2^25 (roughly 33 million characters)*
